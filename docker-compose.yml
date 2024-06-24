@@ -1,0 +1,10 @@
+version: '3'
+services: 
+  backend:
+    image: node:20.3.0-alpine3.17
+    volumes:
+      - ./app:/app
+    ports:
+      - 8020:8020
+    command: sh -c "cd app && npm i express && npm i && node app"
+    # command: sh -c "cd app && rm -vr node_modules && rm package-lock.json && npm i express && npm i && node app"
