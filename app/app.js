@@ -30,9 +30,9 @@ server.use('/communication/files/upload', uploadRoute);
 // Route test
 server.get('/', (req, res, next) => res.send({status:'API running!!'}))
 
-server.all('*', (req, res) => {
-    res.status(404).send('Not Found');
-  });
+// server.all('*', (req, res) => {
+//     res.status(404).send('Not Found');
+//   });
   
 
 // Start Server
