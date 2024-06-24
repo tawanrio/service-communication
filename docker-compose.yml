@@ -5,6 +5,6 @@ services:
     volumes:
       - ./app:/app
     ports:
-      - 8020:8020
+      - 7020:7020
     command: sh -c "cd app && npm i express && npm i && node app"
     # command: sh -c "cd app && rm -vr node_modules && rm package-lock.json && npm i express && npm i && node app"
