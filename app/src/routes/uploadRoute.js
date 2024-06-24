@@ -10,3 +10,7 @@ uploadRoute.post('/', handleFileUpload, (req, res) => {
     
     res.status(200).json({ status: 200, message: 'File uploaded successfully', path: req.processedFilePath });
   });
+
+  uploadRoute.get('/', (req, res)=>{
+    res.status(200).json({ msg:'msg'})
+  })
